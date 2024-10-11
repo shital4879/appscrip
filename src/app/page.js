@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import HomePage from "@/(Components)/HomePage";
-import NavHorizontal from "@/(Components)/Nav-Horizantal";
+import HomePage from "@/(Components)/Home";
+import NavHorizontal from "@/(Components)/Navbar";
 
 export default function Home() {
   return (

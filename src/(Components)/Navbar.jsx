@@ -7,7 +7,7 @@ function NavHorizontal() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
     // Handler to toggle drawer visibility
-    const toggleDrawer = () => {
+    const toggleDra = () => {
         setIsDrawerOpen(!isDrawerOpen);
     };
     return (
@@ -19,7 +19,7 @@ function NavHorizontal() {
                     <h2>Shop Ease</h2>
                     <p>Coming Soon!</p>
                 </div>
-                <div className={styles.overlay} onClick={() => toggleDrawer()} />
+                <div className={styles.overlay} onClick={() => toggleDra()} />
             </div>}
 
             <div className={styles.lorem}>
@@ -46,7 +46,7 @@ function NavHorizontal() {
 
                     <div className={styles.menuIconContainer}>
 
-                        <Icon icon='mingcute:menu-line' className={styles.menuIcon} onClick={() => toggleDrawer()} width="24" height="24" />
+                        <Icon icon='mingcute:menu-line' className={styles.menuIcon} onClick={() => toggleDra()} width="24" height="24" />
 
                         <Icon icon="material-symbols-light:star-outline" width="28" height="28" />
                         {/* <Icon icon='solar:star-rings-linear' width="24" height="24" /> */}

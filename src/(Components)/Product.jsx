@@ -19,7 +19,7 @@ function Products({ isFilterOpen }) {
         }
     }
 
-    const GetProductById = async (id) => {
+    const ProductById = async (id) => {
         const data = await GetAllProductsById(id)
         if (data || data.data) {
             setpro(data.data)
@@ -27,9 +27,6 @@ function Products({ isFilterOpen }) {
         }
     }
 
-    const handleCloseModal = () => {
-        setIsModal(false);
-    };
 
     useEffect(() => {
         GetProducts()
@@ -40,7 +37,7 @@ function Products({ isFilterOpen }) {
         <div className={isFilterOpen ? styles.main : styles.mainCollapse}>
             <div className={styles.gridContainer}>
                 {products?.map(({ id, price, title, image, description, category, rating }) => (
-                    <div key={id} className={styles.card} onClick={() => GetProductById(id)}>
+                    <div key={id} className={styles.card} onClick={() => ProductById(id)}>
                         <div className={styles.cardImg}>
                             <img
                                 src={image}
@@ -69,26 +66,7 @@ function Products({ isFilterOpen }) {
                 ))}
             </div>
 
-            {isModal && (
-                <div className={styles.modalOverlay} onClick={handleCloseModal}>
-                    <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-                        <div className={styles.modalHeader}>
-                            <h3>{pro.title}</h3>
-                            <button onClick={handleCloseModal}>Close</button>
-                        </div>
-                        <div className={styles.modalBody}>
-                            <img src={pro.image} alt={pro.title} width={200} height={200} />
-                            <p>{pro.description}</p>
-                            <h4>Price: ₹{pro.price}</h4>
-                            <h4>Rating: {pro.rating?.rate}/5</h4>
-                        </div>
-                        <div className={styles.cart}>
-                            <button title='Feature coming soon'>Add to cart</button>
-                            <button title='Feature coming soon'>Add to wishlist</button>
-                        </div>
-                    </div>
-                </div>
-            )}
+          
 
         </div>
     )

@@ -100,14 +100,6 @@ function Filter() {
                     </div>
                     <Icon icon="ep:arrow-down" />
                 </div>
-
-
-                {!OccasionOpen && <div className={styles.dropDownContainer}>
-                    <h4>Unselect all</h4>
-                    <div className={styles.dropDownOptions}>
-                        <h1>Coming soon!</h1>
-                    </div>
-                </div>}
             </div>
 
             <div className={styles.ideal}>
@@ -120,12 +112,6 @@ function Filter() {
                 </div>
 
 
-                {!isWorkOpen && <div className={styles.dropDownContainer}>
-                    <h4>Unselect all</h4>
-                    <div className={styles.dropDownOptions}>
-                        <h1>Coming soon!</h1>
-                    </div>
-                </div>}
             </div>
             <div className={styles.ideal}>
                 <div className={styles.comman} onClick={() => togglebtn('fabric')}>
@@ -137,12 +123,7 @@ function Filter() {
                 </div>
 
 
-                {!FabricOpen && <div className={styles.dropDownContainer}>
-                    <h4>Unselect all</h4>
-                    <div className={styles.dropDownOptions}>
-                        <h1>Coming soon!</h1>
-                    </div>
-                </div>}
+             
             </div>
             <div className={styles.ideal}>
                 <div className={styles.comman} onClick={() => togglebtn('segment')}>
@@ -154,12 +135,7 @@ function Filter() {
                 </div>
 
 
-                {!SegmentOpen && <div className={styles.dropDownContainer}>
-                    <h4>Unselect all</h4>
-                    <div className={styles.dropDownOptions}>
-                        <h1>Coming soon!</h1>
-                    </div>
-                </div>}
+             
             </div>
             <div className={styles.ideal}>
                 <div className={styles.comman} onClick={() => togglebtn('suitableFor')}>
@@ -171,12 +147,7 @@ function Filter() {
                 </div>
 
 
-                {!isSuitableForOpen && <div className={styles.dropDownContainer}>
-                    <h4>Unselect all</h4>
-                    <div className={styles.dropDownOptions}>
-                        <h1>Coming soon!</h1>
-                    </div>
-                </div>}
+            
             </div>
             <div className={styles.ideal}>
                 <div className={styles.comman} onClick={() => togglebtn('rawMaterials')}>
@@ -188,12 +159,7 @@ function Filter() {
                 </div>
 
 
-                {!MaterialsOpen && <div className={styles.dropDownContainer}>
-                    <h4>Unselect all</h4>
-                    <div className={styles.dropDownOptions}>
-                        <h1>Coming soon!</h1>
-                    </div>
-                </div>}
+              
             </div>
             <div className={styles.ideal}>
                 <div className={styles.comman} onClick={() => togglebtn('pattern')}>
@@ -205,12 +171,6 @@ function Filter() {
                 </div>
 
 
-                {!isPatternOpen && <div className={styles.dropDownContainer}>
-                    <h4>Unselect all</h4>
-                    <div className={styles.dropDownOptions}>
-                        <h1>Coming soon!</h1>
-                    </div>
-                </div>}
             </div>
 
 

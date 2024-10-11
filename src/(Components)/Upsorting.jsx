@@ -10,7 +10,7 @@ function FilterNav({toggleFilter, isFilterOpen}) {
 
             <div className={styles.filterControl}>
                 <h5>3425</h5>
-                <h6 onClick={()=>toggleFilter()}>{!isFilterOpen ? "<" : ">"} &nbsp; {!isFilterOpen ? 'HIDE FILTERS' : 'SHOW FILTERS'}</h6>
+                <h6 onClick={()=>toggleFilter()}>{!isFilterOpen ? "< HIDE FILTERS" : "> SHOW FILTERS"} &nbsp; </h6>
             </div>
 
             <select className={styles.customSelect}>

@@ -1,9 +1,9 @@
 'use client'
 import React, {useState} from 'react'
 import styles from '../(Styles)/home.module.css'
-import FilterNav from './FilterNav'
-import Filter from './Filter'
-import Products from './Products'
+import FilterNav from './Upsorting'
+import Filter from './Sort'
+import Products from './Product'
 import Footer from './Footer'
 
 function HomePage() {

@@ -77,20 +77,20 @@ function Footer() {
                 <div className={styles.secFive}>
                     <div className={styles.footerTitle}>
                         <h4>FOLLOW US</h4>
+                        
                         <Icon icon="ep:arrow-down" className={styles.arrowDown} />
                     </div>
                     <div className={styles.followUs}>
-                        <Icon icon="f7:logo-instagram" width={20} className={styles.socialIcon} />
-                        <Icon icon="mdi:linkedin" width={20} className={styles.socialIcon} />
+                       
                     </div>
 
                     <div className={styles.paymentMethods}>
                         <h4>metta muse ACCEPTS</h4>
                         <div className={styles.paymentCardContainer}>
-                            <Icon icon="simple-icons:googlepay" className={styles.paymentCards} />
+                            <Icon icon="grommet-icons:amex" className={styles.paymentCards} />
                             <Icon icon="logos:mastercard" className={styles.paymentCards} />
                             <Icon icon="logos:apple-pay" className={styles.paymentCards} />
-                            <Icon icon="grommet-icons:amex" className={styles.paymentCards} />
+                            <Icon icon="simple-icons:googlepay" className={styles.paymentCards} />
                         </div>
                     </div>
                 </div>
